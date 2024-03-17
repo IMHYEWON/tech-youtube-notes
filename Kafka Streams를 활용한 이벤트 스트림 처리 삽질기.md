@@ -155,11 +155,43 @@ Try 2) 토픽 & 파티션 검토
 - 처리 속도와 Consumer Group Leave 로그를 보다 적극적으로 모니터링
 - 지연이 발생할만할 부분을 주의하자 (ex. 외부 API 호출 등)
 
-### Issue 5) Disk Usage Critical 알람 발생
+### Issue 5) Disk Usage Critical 알람 발생 - 상태저장소 잘 쓰기
 - 카프카는 디스크 기반으로 동작함, 확인 결과 예상보다 많은 불필요한 데이터가 리소스를 차지하고 있음
-- 
+- 상태저장소(State Store) 내부 토픽의 Retention, Delete Policy도 잘 관리하자
+  - 불필요한 데이터로 인한 처리 비효율과 디스크 부하가 발생할 수 있다.
+  - 내부토픽은 시스템이 자동으로 삭제해주기 때문에 놓치기 쉬움.
+- 상태저장소 - 분산처리, 분산저장소의 이점을 누리기
+  - 상태저장소는 각 인스턴스 로컬에 보관되므로, 접근도 빠르고 부하도 분산된다.
+  - 데이터는 브로커나 로컬 인스턴스 디스크/인메모리에 저장됨.
+    - Replicaton 개념(체인지 로그 등에 저장)이 있지만 MySQL, Redis와 같은 저장소만큼 마음이 놓이지 않고
+    - 실제 이슈 상황에서도 디버깅/복구 난이도가 상대적으로 높은 편임
+    - ⇒ 레코드 리플레이 (오프셋 리셋)으로 복구가 가능한 데이터여야 함
+    - ⇒ 결국 임시 저장소에 적합함.
+    - ❗️비슷한 맥락에서, 배치처리로 적합한걸 굳이 스트림즈로 고집하지는 말자
+- 리파티셔닝 (Repartitioning) 남용 금지
+  - 리파티셔닝이란? map()과 같은 새로운 키가 생성되는 메소드 호출 시, 키 변경에 따라 토픽 파티션을 이동시키는 작업
+  - 리파티셔닝이 일어날 때 대규모 데이터 이동이 변경하면서 네트워크/디스크 IO 부하 발생
+  - 가급적 키 변경 연산 (map, transform, flatMap, groupBy)보다는 mapValues, transformValues, flatMapValues, groupByKey의 사용 권장
+- 스트림 처리 중에는 가급적 외부 API/DB호출을 하지 말자.
+  - 스트림 프로세서로 도달하기 전에, 애초에 이벤트 payload를 보강
+  - KStream Ktable JOIN과 같은 스트림즈 기능을 활용
+  - Hot Key ISSUE : 모든 키 기반 동작이 그렇듯이, 스트림즈에서도 특정 파티션에 몰리지 않도록 키 관리를 유의하자.
 
 ----
 ## 4. 모니터링과 관리
+#### 1. Burror
+- Consumer Laf, Broker Topic Offset
+#### 2. JMX
+- 프로듀서의 Request latency
+- 컨슈머의 Commit Latencyt
+- [https://docs.confluent.io/platform/current/streams/monitoring.html](https://docs.confluent.io/platform/current/streams/monitoring.html)
+- [Monitoring Kafka with JMX in Confluent Platform](https://docs.confluent.io/platform/current/kafka/monitoring.html#monitoring-ak-with-jmx-in-cp)
+#### 3. Prometheus & Grafana
+스트림 프로세서 상태 메트릭화 -> 에러, 리밸런싱 상태에 빠진 프로세서 인지
+#### 4. CMAK (Cluster Manager for Kafka)
+카프카 매니저
+#### 5. 스트림즈 리셋 기능 
+카프카에 내장된 Kafka-streams-application-reset tool을 젠킨스로 wrapping
+- [Reset Kafka Streams Applications in Confluent Platform](https://docs.confluent.io/platform/current/streams/developer-guide/app-reset-tool.html)
 
 
