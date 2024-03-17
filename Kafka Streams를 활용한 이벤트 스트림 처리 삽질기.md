@@ -1,4 +1,5 @@
 ## Kafka Streams를 활용한 이벤트 스트림 처리 삽질기 (#우아콘 2023)
+[Kafka Streams를 활용한 이벤트 스트림 처리 삽질기](https://youtu.be/YACC1t_oSlA?si=vluHZTabQnT3eMDQ)
 ### 세션의 목표
 배치 만능주의 탈피, 카프카 스트림 도입에 대한 막연한 두려움 완화, 스트림을 도입했을 때 발생할 수 있는 장애 포인트 사전 인지
 
