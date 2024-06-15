@@ -21,5 +21,8 @@
 ## 카카오
 - [if(kakao)2022 | Batch Performance 극한으로 끌어올리기: 1억 건 데이터 처리를 위한 노력](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/if(kakao)2022%20%7C%20Batch%20Performance%20%EA%B7%B9%ED%95%9C%EC%9C%BC%EB%A1%9C%20%EB%81%8C%EC%96%B4%EC%98%AC%EB%A6%AC%EA%B8%B0%3A%201%EC%96%B5%20%EA%B1%B4%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B2%98%EB%A6%AC%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EB%85%B8%EB%A0%A5.md)
 
+## 당근
+- [당근마켓 SRE 밋업 1회 | 당근마켓 gRPC 서비스 운영 노하우](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/%EB%8B%B9%EA%B7%BC%EB%A7%88%EC%BC%93%20SRE%20%EB%B0%8B%EC%97%85%20%7C%20%EB%8B%B9%EA%B7%BC%EB%A7%88%EC%BC%93%20gRPC%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EC%9A%B4%EC%98%81%20%EB%85%B8%ED%95%98%EC%9A%B0.md)
+
 ## NHN
 - [NHN FORWARD 22 | 로그인에 사용하는 OAuth : 과거, 현재 그리고 미래](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/%5BNHN%20FORWARD%2022%5D%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%97%90%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20OAuth%20%3A%20%EA%B3%BC%EA%B1%B0%2C%20%ED%98%84%EC%9E%AC%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EB%AF%B8%EB%9E%98.md)
