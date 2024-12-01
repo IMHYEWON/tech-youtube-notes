@@ -9,6 +9,7 @@
 - [토스ㅣSLASH 23 - Server-driven UI로 토스팀의 마지막 어드민 만들기.md](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/%ED%86%A0%EC%8A%A4%E3%85%A3SLASH%2023%20-%20Server-driven%20UI%EB%A1%9C%20%ED%86%A0%EC%8A%A4%ED%8C%80%EC%9D%98%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EC%96%B4%EB%93%9C%EB%AF%BC%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 - [토스ㅣSLASH 23 - 새로운 은행을 위한 Modern 대외 연계 시스템 구축기](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/%ED%86%A0%EC%8A%A4%E3%85%A3SLASH%2023%20-%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%EC%9D%80%ED%96%89%EC%9D%84%20%EC%9C%84%ED%95%9C%20Modern%20%EB%8C%80%EC%99%B8%20%EC%97%B0%EA%B3%84%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%EA%B8%B0.md)
 - [토스ㅣSLASH 23 - 금융사 최초의 Zero Trust 아키텍처 도입기](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/%ED%86%A0%EC%8A%A4%E3%85%A3SLASH%2023%20-%20%EA%B8%88%EC%9C%B5%EC%82%AC%20%EC%B5%9C%EC%B4%88%EC%9D%98%20Zero%20Trust%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20%EB%8F%84%EC%9E%85%EA%B8%B0.md)
+- [토스ㅣSLASH 24 - 보상 트랜잭션으로 분산 환경에서도 안전하게 환전하기](https://github.com/IMHYEWON/tech-youtube-notes/blob/main/%ED%86%A0%EC%8A%A4%E3%85%A3SLASH%2024%20-%20%EB%B3%B4%EC%83%81%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EC%9C%BC%EB%A1%9C%20%EB%B6%84%EC%82%B0%20%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C%EB%8F%84%20%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C%20%ED%99%98%EC%A0%84%ED%95%98%EA%B8%B0.md)
 
 
 ## 우아콘
