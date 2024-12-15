@@ -1,4 +1,5 @@
-[ Kafka 뉴비의 마이그레이션, 산 넘고 물 건너 | 2024 당근 테크 밋업 | https://youtu.be/zheA2qdyCnM?si=LW0Cb3zkcJe4M6Et ]
+# 2024 당근 테크 밋업 | Kafka 뉴비의 마이그레이션, 산 넘고 물 건너
+[Kafka 뉴비의 마이그레이션, 산 넘고 물 건너 | 2024 당근 테크 밋업](https://youtu.be/zheA2qdyCnM?si=LW0Cb3zkcJe4M6Et)
 
 1. Context
 2. Static Broker Host
